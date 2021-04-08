@@ -1,0 +1,143 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+
+
+<div class="container-xl" >
+    <div class="row"style="margin-top:134px;">
+        <div class="col-12 text-center">
+            <h2 class="x2-title-cornerStyle x2-title-cornerStyleRed x2-font--Title text-uppercase font-weight-light my-5">Nous <span class="font-weight-bold">contacter</span></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center my-4">
+            <p>
+                <b>Vous souhaitez de plus amples informations sur nos services ?</b><br />
+                Nous vous invitons à nous contacter par le biais du formulaire ou par téléphone
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 my-2 text-justify">
+            <form action="">
+                <div class="form-group row mb-0 mb-lg-3">
+                    <div class="col-lg-6 mb-lg-0 mb-3">
+                        <input class="form-control form-control-lg" type="text" placeholder="Nom">
+                    </div>
+                    <div class="col-lg-6 mb-lg-0 mb-3">
+                        <input class="form-control form-control-lg" type="text" placeholder="Ville">
+                    </div>
+                </div>
+                <div class="form-group row mb-0 mb-lg-3">
+                    <div class="col-lg-6 mb-lg-0 mb-3">
+                        <input class="form-control form-control-lg" type="text" placeholder="Téléphone">
+                    </div>
+                    <div class="col-lg-6 mb-lg-0 mb-3">
+                        <input class="form-control form-control-lg" type="email" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="6" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <div>[Recaptcha Placeholder]</div>
+                    </div>
+                    <div class="col-auto ml-auto">
+                        <a class="btn font-weight-bold x2-bg-red x2-borderRadius-0 text-white" href="#">Envoyer</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-white font-weight-bold text-center py-3" style="background-color:#bdbbaf;">
+            <ul class="nav" id="myTab" role="tablist">
+                <li class="my-1 offset-xl-2 col-xl-2 col-lg-4 nav-item">
+                    <a id="saintdenis-tab" href="#saintdenis" data-toggle="tab" role="tab" aria-controls="saintdenis" aria-selected="false" class="text-white nav-link text-decoration-none x2-border-dark2 x2-locationBtn x2-bg-dark py-2 px-4">Saint-Denis</a>
+                </li>
+                <li class="my-1 offset-xl-1 col-xl-2 col-lg-4 nav-item">
+                    <a id="saintpierre-tab" href="#saintpierre" data-toggle="tab" role="tab" aria-controls="saintpierre" aria-selected="false" class="text-white nav-link text-decoration-none x2-border-dark2 x2-locationBtn x2-bg-dark py-2 px-4">Saint-Pierre</a>
+                </li>
+                <li class="my-1 offset-xl-1 col-xl-2 col-lg-4 nav-item">
+                    <a id="saintleu-tab" href="#saintleu" data-toggle="tab" role="tab" aria-controls="saintleu" aria-selected="true" class="text-white nav-link text-decoration-none x2-border-dark2 x2-locationBtn x2-bg-dark py-2 px-4 active">Saint-Leu</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="saintdenis" role="tabpanel" aria-labelledby="saintdenis-tab">
+                    <div style="position:relative;">
+                        <div style="position:absolute;top:40%;z-index:1;">
+                            <div style="position:relative;">
+                                <img style="width:250px;" class="img-fluid" src="img/contactLieu.png" alt="Lieu" />
+                                <div style="position:absolute;top:35%;" class="text-white mx-auto text-center w-100">
+                                    <p class="text-center mb-1"><b>Saint-Denis</b> (filiale)</p>
+
+                                    <p class="small mb-1" style="line-height: 16px;">
+                                        <br /><br />
+
+                                    </p>
+                                    <p class="small mb-0 font-weight-bold" style="line-height: 16px;">
+                                        Tél. <br />
+                                        Fax.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe style="filter: grayscale(1);border:none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.6381578745504!2d55.47791905100444!3d-20.886629986007183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21827f70ab36f305%3A0x52e66b453c8a5d1b!2sXPERTS%20O%20CARRE!5e0!3m2!1sen!2sfr!4v1617002711044!5m2!1sen!2sfr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="saintpierre" role="tabpanel" aria-labelledby="saintpierre-tab">
+                    <div style="position:relative;">
+                        <div style="position:absolute;top:40%;z-index:1;">
+                            <div style="position:relative;">
+                                <img style="width:250px;" class="img-fluid" src="img/contactLieu.png" alt="Lieu" />
+                                <div style="position:absolute;top:35%;" class="text-white mx-auto text-center w-100">
+                                    <p class="text-center mb-1"><b>Saint-Pierre</b> (filiale)</p>
+
+                                    <p class="small mb-1" style="line-height: 16px;">
+                                        <br /><br />
+
+                                    </p>
+                                    <p class="small mb-0 font-weight-bold" style="line-height: 16px;">
+                                        Tél. <br />
+                                        Fax.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe style="filter: grayscale(1);border:none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.4941766462275!2d55.47229075101065!3d-21.33099438576598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2182a1232d908bc3%3A0xf298983d6d97931d!2sXPERTS%20O%20CARRE!5e0!3m2!1sen!2sfr!4v1617002781765!5m2!1sen!2sfr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="saintleu" role="tabpanel" aria-labelledby="saintleu-tab">
+                    <div style="position:relative;">
+                        <div style="position:absolute;top:40%;z-index:1;">
+                            <div style="position:relative;">
+                                <img style="width:250px;" class="img-fluid" src="img/contactLieu.png" alt="Lieu" />
+                                <div style="position:absolute;top:35%;" class="text-white mx-auto text-center w-100">
+                                    <p class="text-center mb-1"><b>Saint-Leu</b> (filiale)</p>
+
+                                    <p class="small mb-1" style="line-height: 16px;">
+                                        1, rue Galabe<br />
+                                        ZAC Portail<br />
+                                        97424 Piton Saint-leu
+                                    </p>
+                                    <p class="small mb-0 font-weight-bold" style="line-height: 16px;">
+                                        Tél. 0262 70 03 20<br />
+                                        Fax. 0262 24 12 74
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe style="filter: grayscale(1);border:none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4112.65963187518!2d55.29708913269483!3d-21.21580451188977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2182972dd8fddbc5%3A0xb741eb3b317558ae!2sXPERTS%20O%20CARRE!5e0!3m2!1sen!2sfr!4v1616997700140!5m2!1sen!2sfr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

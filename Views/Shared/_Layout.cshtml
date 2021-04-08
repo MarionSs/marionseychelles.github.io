@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xperts2 - @ViewData["Title"]</title>
+
+    <!-- Styles -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="css/all.min.css" rel="stylesheet"> -->
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <script src="js/swiper-bundle.min.js"></script>
+
+
+
+
+</head>
+<body>
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-12 px-0">
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top x2-bg-red p-0 my-auto mx-auto" style="margin-bottom:5px;line-height:100%;max-width: 1440px;">
+                    <div class="x2-Home bg-white">
+                        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                            <img class="img-fluid" src="img/logo_xperts.png" style="width:180px;" />
+                        </a>
+                    </div>
+                    <div id="x2-HomeLogo"></div>
+                    <button class="navbar-toggler d-lg-none x2-navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="text-right collapse navbar-collapse flex-column" id="collapsibleNavId">
+                        <ul class="my-3 my-lg-0 navbar-nav ml-auto mr-lg-5 text-center">
+                            <li class="py-0 my-auto nav-item pr-lg-4 d-lg-block d-none">
+                                <form action="" method="get">
+                                    <div class="input-group rounded">
+                                        <input name="search" style="height:30px;border-radius: 50px 0 0 50px !important;" type="search" class="form-control rounded bg-white border-0" placeholder="" aria-label="Search"
+                                               aria-describedby="search-addon" />
+                                        <span style="border-radius: 0 50px 50px 0 !important;" class="input-group-text border-0 bg-white" id="search-addon">
+                                            <i class="fas fa-search x2-color-lightgrey"></i>
+                                        </span>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="py-0 my-auto nav-item pr-lg-4 border-right-lg">
+                                <a class="nav-link py-1 text-white" href="#"><i style="font-size:1.3em;" class="fas fa-phone-square-alt"></i> <span class="my-auto">0262 30 76 00</span></a>
+                            </li>
+                            <li class="py-0 my-auto nav-item pl-lg-4">
+                                <a class="nav-link py-1" href="#"><i style="font-size:1.3em;" class="text-white fab fa-linkedin"></i></a>
+                            </li>
+                            <li class="py-0 my-auto nav-item pr-lg-4 border-right-lg">
+                                <a class="nav-link py-1" href="#"><i style="font-size:1.3em;" class="text-white fab fa-twitter"></i></a>
+                            </li>
+                            <li class="py-0 my-auto nav-item ml-lg-5 h-100">
+                                <a class="mx-auto mt-3 mt-lg-0 nav-link x2-color-red font-weight-bold bg-white" asp-controller="Home" asp-action="Privacy" style="max-width: 200px;"><i style="font-size:1.3em;" class="far fa-user"></i> Espace privé</a>
+                            </li>
+                        </ul>
+                        <ul class="mb-3 mb-lg-0 mt-3 navbar-nav ml-auto mr-lg-5 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-controller="Home" asp-action="Our_Expertises">Nos Expertises</a>
+                            </li>
+                            <span class="sep">|</span>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-controller="Home" asp-action="Agenda">Agenda</a>
+                            </li>
+                            <span class="sep">|</span>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-controller="Home" asp-action="Webinar">Webinaire</a>
+                            </li>
+                            <span class="sep">|</span>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-controller="Home" asp-action="Career">Carrière</a>
+                            </li>
+                            <span class="sep">|</span>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-controller="Home" asp-action="contact">Contact</a>
+                            </li>
+                            <li class="py-3 my-auto nav-item pr-lg-4 d-lg-none d-block">
+                                <form action="" method="get">
+                                    <div class="input-group rounded mx-auto" style="max-width:500px;">
+                                        <input name="search" style="height:30px;border-radius: 50px 0 0 50px !important;" type="search" class="form-control rounded bg-white border-0" placeholder="" aria-label="Search"
+                                               aria-describedby="search-addon" />
+                                        <span style="border-radius: 0 50px 50px 0 !important;" class="input-group-text border-0 bg-white" id="search-addon">
+                                            <i class="fas fa-search x2-color-lightgrey"></i>
+                                        </span>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    @RenderBody()
+
+    <!-- </main> -->
+
+    <footer class="x2-footer">
+        <div class="container-xl x2-bg-red">
+            <div class="x2-newsletter">
+                <div class="row x2-newsletterContent text-xl-left text-center">
+                    <div class="py-xl-0 py-4 col-xl-6">
+                        <h2 class="x2-title-cornerStyle x2-title-cornerStyleWhite x2-font--Title text-white text-uppercase font-weight-light">Recevez la <span class="font-weight-bold">newsletter</span></h2>
+                    </div>
+                    <div class="py-xl-0 py-1 col-xl-4 my-auto">
+                        <p class="small text-white mb-0" style="font-size:12px;line-height:100%">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="py-xl-0 py-4 col-xl-2 my-auto">
+                        <a class="btn x2-bg-lightgrey text-white font-weight-bold" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-envelope-open-text"></i> Je m'abonne</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xl x2-footerInfos">
+            <div class="row py-5">
+                <div class="col-md-2 col-6 text-center my-xl-auto mb-3 d-none d-md-block">
+                    <img class="img-fluid" src="img/logo_xperts_footer.png" style="width:200px;" />
+                </div>
+                <div class="col-md-3 col-6 text-center text-md-left my-3 my-md-0 d-none d-md-block">
+                    <h4 class="text-white text-uppercase">Blog</h4>
+                    <h5 class="text-white">Titre article</h5>
+                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    <a href="#" class="text-decoration-none"><span class="x2-color-red font-italic font-weight-bold">> Lire la suite</span></a>
+                </div>
+                <div class="col-md-3 pl-md-5 text-center text-md-left my-3 my-md-0 x2-borderLeft">
+                    <h4 class="text-white text-uppercase">Liens sociaux</h4>
+                    <div class="text-white my-3" style="font-size:1.5rem;">
+                        <a href="#" class="text-decoration-none text-white mr-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-decoration-none text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <h4 class="text-white text-uppercase">FAQ</h4>
+                </div>
+                <div class="col-md-4 text-center text-md-left my-3 my-md-0 x2-borderLeft">
+                    <h4 class="text-white text-uppercase px-5">Contact</h4>
+                    <div class="swiper-container swiperContact">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide text-white px-5">
+                                <p class="mb-0">
+                                    <b>Adresse (filiale) : </b>Av. Desbassyns<br />
+                                    6 ruelle des Hortensias
+                                <p class="mb-0">
+                                    97490 Sainte-Clotilde,
+                                </p>
+                                <p class="mb-2">
+                                    Réunion
+                                </p>
+
+                                <p class="mb-2">
+                                    <b>Téléphone :</b> 0262 73 00 91
+                                </p>
+
+                            </div>
+                            <div class="swiper-slide text-white px-5">
+                                <p class="mb-0">
+                                    <b>Adresse (filiale) : </b>13, rue Bory Saint-Vincent<br />
+                                    ZAC Bank - Rés. Guétali Appt 48
+                                <p class="mb-0">
+                                    97410 Saint-Pierre
+                                </p>
+                                <p class="mb-2">
+                                    Réunion
+                                </p>
+
+                                <p class="mb-2">
+                                    <b>Téléphone : </b>0262 25 15 61
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-white px-5">
+                                <p class="mb-0">
+                                    <b>Adresse (filiale) : </b>5 rue Achille Malet<br />
+                                    ZAC des Grègues 2
+                                <p class="mb-0">
+                                    97480 Sainte-Joseph
+                                </p>
+                                <p class="mb-2">
+                                    Réunion
+                                </p>
+
+                                <p class="mb-2">
+                                    <b>Téléphone :</b>0262 25 15 61
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-white px-5">
+                                <p class="mb-0">
+                                    <b>Adresse (filiale) : </b>2, rue Galabe E 2-1<br />
+                                    ZAC Portail
+                                <p class="mb-0">
+                                    97424 Piton Saint-Leu
+                                </p>
+                                <p class="mb-2">
+                                    Réunion
+                                </p>
+
+                                <p class="mb-2">
+                                    <b>Téléphone :</b> 0262 70 03 20
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-white px-5">
+                                <p class="mb-0">
+                                    <b>Adresse (filiale) : </b>21, rue de Madagascar<br />
+                                    Résidence Arcadine Appt 40
+                                <p class="mb-0">
+                                    97400 Saint-Denis
+                                </p>
+                                <p class="mb-2">
+                                    Réunion
+                                </p>
+
+                                <p class="mb-2">
+                                    <b>Téléphone :</b> 0262 30 76 00
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next text-white font-weight-bold" style="transform: scale(0.3);"></div>
+                        <div class="swiper-button-prev text-white font-weight-bold" style="transform: scale(0.3);"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center text-white py-2">
+                    <a href="#" class="text-white">Mentions légales</a> - © 2021 Xperts<sup>2</sup>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script>
+        var swiper = new Swiper('.swiperContact', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        var swiper2 = new Swiper('.swiperHome', {
+            autoplay: true,
+            delay: 5000,
+        });
+    </script>
+
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg h-100">
+            <div class="modal-content x2--background-nl text-center border-0 x2-bg-red" style="border-radius:0;">
+                <div class="w-100">
+                    <div class="mx-auto" style="width:300px;">
+                        <span class="x2-title-cornerStyleNL x2-title-cornerStyleWhite">
+                        </span>
+                    </div>
+                </div>
+                <h2 class="text-center x2-font--Title text-white text-uppercase font-weight-light m-0">
+                    Recevez la <br />
+                    <span class="font-weight-bold">newsletter</span>
+                </h2>
+                <div class="row mt-4">
+                    <div class="col-6 offset-3">
+                        <div class="form-group mb-0">
+                            <label for=""></label>
+                            <input type="text" class="form-control nl-formStyle" placeholder="Nom" aria-describedby="helpId">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input type="text" class="form-control nl-formStyle" placeholder="Prénom" aria-describedby="helpId">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <p class="text-white small text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                    </div>
+                </div>
+                <div class="row pb-3">
+                    <div class="col-10 offset-1">
+                        <a class="btn x2-bg-lightgrey text-white font-weight-bold"><i class="fas fa-envelope-open-text"></i> Je m'abonne</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

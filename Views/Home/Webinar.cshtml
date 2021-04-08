@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Webinaire";
+}
+
+<div class="container-xl">
+    <div class="row" style="margin-top:134px;">
+        <div class="col-12 px-0 text-center">
+            <h2 class="x2-title-cornerStyle x2-title-cornerStyleRed x2-font--Title text-uppercase font-weight-light my-5">Nos <span class="font-weight-bold">actualités</span></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <div>
+                Filtrez vos actualités :
+                <select style="border-radius:5px;padding:2px;padding-right: 50px;" class="border-0 text-white x2-bg-red" name="filter" id="filter">
+                    <option value="">Filtre</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 my-2">
+            <div class="x2-bgActuGrey">
+                <div class="x2-actuBlock h-100">
+                    <img src="img/actu-wide.jpg" alt="" class="img-fluid d-xl-block d-none under">
+                    <img src="img/actu-blockgrey.png" alt="" class="img-fluid d-xl-block d-none over">
+                    <div class="x2-actuContentGrey ml-md-auto text-center text-md-left pt-xl-5 h-100">
+                        <img src="img/actu-wide.jpg" class="x2-customActuContentGrey img-fluid d-block d-xl-none float-md-left mr-4" />
+                        <div class="p-4 h-100">
+                            <h5>Titre article</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                            <a style="border-color:black !important;" class="btn x2-actuMore font-weight-bold font-italic" href="actu-single.html">> Lire la suite</a>
+
+                            <span id="btnDrop1" class="p-2 m-1 x2-actuShare" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                            <div class="dropdown-menu text-left" id="btnDroplist1">
+                                <a class="dropdown-item">
+                                    <i style="font-size:1.3em;" class="x2-color-red fab fa-linkedin"></i> Linkedin
+                                </a>
+                                <a class="dropdown-item">
+                                    <i style="font-size:1.3em;" class="x2-color-red fab fa-twitter"></i> Twitter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 my-2">
+            <div class="x2-bgActu">
+                <div class="x2-actuBlock h-100">
+                    <img src="img/shutterstock_751298770.png" alt="" class="img-fluid d-xl-block d-none under">
+                    <img src="img/actu-block.png" alt="" class="img-fluid d-xl-block d-none over">
+                    <div class="text-white x2-actuContent ml-md-auto text-center text-xl-left pt-xl-5">
+                        <img src="img/shutterstock_751298770.png" alt="" class="img-fluid d-block d-xl-none">
+                        <div class="p-4 p-xl-0">
+                            <h5>Titre article</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                            <a class="btn x2-actuMore font-weight-bold font-italic text-white" href="actu-single.html">> Lire la suite</a>
+
+                            <span id="btnDrop1" class="p-2 m-1 x2-actuShare" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-share-alt x2-color-red"></i>
+                            </span>
+                            <div class="dropdown-menu text-left" id="btnDroplist1">
+                                <a class="dropdown-item">
+                                    <i style="font-size:1.3em;" class="x2-color-red fab fa-linkedin"></i> Linkedin
+                                </a>
+                                <a class="dropdown-item">
+                                    <i style="font-size:1.3em;" class="x2-color-red fab fa-twitter"></i> Twitter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 my-2">
+            <div class="x2-bgActu">
+                <div class="x2-actuBlock h-100">
+                    <img src="img/shutterstock_751298770.png" alt="" class="img-fluid d-xl-block d-none under">
+                    <img src="img/actu-block.png" alt="" class="img-fluid d-xl-block d-none over">
+                    <div class="text-white x2-actuContent ml-md-auto text-center text-xl-left pt-xl-5">
+                        <img src="img/shutterstock_751298770.png" alt="" class="img-fluid d-block d-xl-none">
+                        <div class="p-4 p-xl-0">
+                            <h5>Titre article</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                            <a class="btn x2-actuMore font-weight-bold font-italic text-white" href="actu-single.html">> Lire la suite</a>
+                            <span id="btnDrop2" class="p-2 m-1 x2-actuShare" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-share-alt x2-color-red"></i>
+                            </span>
+                            <div class="dropdown-menu text-left" id="btnDroplist2">
+                                <a class="dropdown-item">
+                                    <i style="font-size:1.3em;" class="x2-color-red fab fa-linkedin"></i> Linkedin
+                                </a>
+                                <a class="dropdown-item">
+                                    <i style="font-size:1.3em;" class="x2-color-red fab fa-twitter"></i> Twitter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center mx-auto my-4">
+            <a class="btn font-weight-bold x2-border-red x2-color-red x2-borderRadius-0" href="#">Voir plus d'actualités <i class="fas fa-plus"></i></a>
+        </div>
+    </div>
+</div>
